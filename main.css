@@ -1,4 +1,423 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Public Sans";
+    background: #f2f2f2;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+header{
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 0 40px;
+}
+
+nav ul li a{
+    color: #36536b;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    opacity: 0.7;
+    transition: .3s all ease-in-out;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+}
+
+.header__btn{
+    border-radius: 24px;
+    border: none;
+    box-shadow: 10px 10px 25px -10px #36536b40;
+    background: #ba4270;
+    padding: 16px 20px 13px 26px;
+
+    color: #fbfcfe;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+    cursor: pointer;
+}
+
+.hero{
+    margin-bottom: 177px;
+}
+
+.hero__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero h1{
+    color: #36536b;
+    font-family: "DM Serif Display";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    max-width: 546px;
+    width: 100%;
+}
+
+.implement{
+    margin-bottom: 180px;
+}
+
+.implement__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.implement .about{
+    max-width: 445px;
+    width: 100%;
+}
+
+.implement h2{
+    color: #36536b;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    margin-bottom: 25px;
+}
+
+.implement p{
+    color: #6c8294;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.payments{
+    margin-bottom: 103px;
+}
+
+.payments__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px 0;
+    width: 350px;
+}
+
+.item h3{
+    color: #36536b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.14px;
+    text-align: center;
+}
+
+footer{
+    padding: 31px 0;
+    background: #1b262f;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left{
+    display: flex;
+    align-items: center;
+    gap: 0 65px;
+}
+
+.footer__left ul{
+    list-style: none;
+    display: flex;
+    gap: 0 40px;
+}
+
+.footer__left ul li a{
+    color: #fbfcfe;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    opacity: 0.7;
+    transition: .3s all ease-in-out;
+}
+
+.footer__left ul li a:hover{
+    opacity: 1;
+}
+
+.footer__right{
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    list-style: none;
+}
+
+.menu__hamburger{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1090px){
+    .implement__content{
+        justify-content: center;
+    }
+
+    .implement .about{
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }    
+    
+    .implement img{
+        /* width: 391.73px;
+        height: 250px; */
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 1005px){
+    .hero__content{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero h1{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* MEDIA */
+/* Max width: 689px */
+@media (max-width: 689px){
+    header{
+        margin-bottom: 50px;
+    }
+
+    .hero{
+        margin-bottom: 180px;
+    }
+
+    .hero__content{
+        flex-wrap: wrap;
+        gap: 50px 0;
+    }
+
+    .hero__img{
+        width: 155px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .hero__content h1{
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .item img{
+        width: 88px;
+        height: 88px;
+    }
+}
+
+@media (max-width: 650px){
+    .header__right{
+        gap: 0 15px;
+    }
+
+    .header__right ul{
+        gap: 0 15px;
+    }
+
+    .header__btn{
+        padding: 13px 15px 13px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 620px){
+    .footer__content{
+        flex-wrap: wrap;
+        gap: 25px 25px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 595px){
+    .payments__content{
+        flex-wrap: wrap;
+        gap: 20px 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px){
+    .header__right{
+        display: none;
+    }
+
+    .implement img{
+        width: 380px;
+        height: 240px;
+    }
+
+    .menu__hamburger{
+        display: block;
+        width: 28px;
+        height: 17px;
+    }
+
+    .footer__content{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 38px 0;
+    }
+
+    .footer__left{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 0;
+    }
+}
+
+
+@media (max-width: 327px){
+    header img{
+        width: 135px;
+        height: 38px;
+    }
+
+    header{
+        margin-bottom: 40px;
+    }
+
+    .hero__img{
+        width: 127.2px;
+        height: 240px;
+    }
+
+    .hero__content{
+        gap: 25px 0;
+    }
+
+    .hero h1{
+        font-size: 27px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        text-align: center;
+    }
+
+    .hero{
+        margin-bottom: 102px;
+    }
+
+    .implement{
+        margin-bottom: 77px;
+    }
+
+    .implement__content{
+        gap: 48px 0;
+    }
+
+    .about{
+        gap: 25px 0;
+    }
+
+    .implement img{
+        width: 328px;
+        height: 209px;
+    }
+
+    .implement h2{
+        font-size: 34px;
+        line-height: 36px;
+        letter-spacing: -0.28px;
+        text-align: center;
+    }
+
+    .implement p{
+        font-size: 13px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .payments__content{
+        gap: 165px 0;
+    }
+
+    .payments .item img{
+        width: 106px;
+        height: 106px;
+    }
+
+    .footer__content{
+        flex-direction: column;
+        align-items: center;
+        gap: 38px 0;
+    }
+
+    .footer__left{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px 0;
+    }
+
+    footer{
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
+    .footer__left ul{
+        flex-direction: column;
+        gap: 30px 0;
+    }
 }

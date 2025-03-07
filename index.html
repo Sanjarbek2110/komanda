@@ -3,36 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project-1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
+        <div class="container">
+            <nav>
+                <a href="#">
+                    <img src="./images/header_logo.svg" alt="Logo">
+                </a>
+
+                <div class="header__right">
+                    <ul>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <button class="header__btn">Schedule a Demo</button>
+                </div>
+
+                <img src="./images/menu.svg" alt="" class="menu__hamburger">
+            </nav>
         </div>
+        
     </header>
 
-
-    <section>
-        <h1>Sanjar BOT</h1>
-    </section>
-
-    <section>
-        <h2>About Sanjar BOT</h2>
-        <p>Sanjar Bot is a simple AI chatbot designed to assist users with various queries related to technology and programming. He was created using Python and the ChatterBot library. He can provide information about programming languages, frameworks, and development tools, as well as answer questions about programming concepts.</p>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>
+                        Start building with our APIs for absolutely free.
+                    </h1>
     
+                    <img src="./images/hero_left.svg" alt="" class="hero__img">
+                </div>
+        </section>
+
+        <section class="implement">
+            <div class="container">
+                <div class="implement__content">
+
+                    <img src="./images/implement_img.png" alt="">
+
+                    <div class="about">
+                        <h2>
+                            Easy to implement
+                        </h2>
+
+                        <p>
+                            Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payments">
+            <div class="container">
+                <div class="payments__content">
+                    <div class="item">
+                        <img src="./images/payments_img1.svg" alt="">
+
+                        <h3>
+                            Personal Finances
+                        </h3>
+                    </div>
+
+                    <div class="item">
+                        <img src="./images/payments_img2.svg" alt="">
+
+                        <h3>
+                            Banking & Coverage
+                        </h3>
+                    </div>
+
+                    <div class="item">
+                        <img src="./images/payments_img3.svg" alt="">
+
+                        <h3>
+                            Consumer Payments
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__left">
+                    <a href="#">
+                        <img src="./images/footer_logo.png" alt="Logo"> 
+                    </a>
+
+                    <ul>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="footer__right">
+                    <li>
+                        <a href="#">
+                            <img src="./images/facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/linkidin.svg" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
